@@ -19,7 +19,7 @@ inside nclient:
 
 Historical note
 =====
-This is a relly ancient project from times long ago when I was trying to learn unix network programming. 
+This is a really ancient project from times long ago when I was trying to learn unix network programming. 
 It also happens to be my first big programming project of around 20KB of source code!
 According to the file timestamps it was created in August 2005 and modified later in October.
 I was proud of it at the time, but I don't think anyone has ever used it...
