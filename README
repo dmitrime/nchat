@@ -1,0 +1,17 @@
+nchat, nserver and nclient, -- simple unix chat client and server, based on the select() call and a
+linked list.
+
+to build nserver: make nserver
+to build nclient: make nclient
+
+./nserver -- to start the server
+./nclient [IP or hostname] -- to start the client
+
+inside nclient:
+
+/quit or /qq - quit
+/list        - list all users
+/nick [nick] - change name
+/me          - speak in third person about yourself
+
+----------------------

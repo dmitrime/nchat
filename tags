@@ -1,0 +1,74 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+AVERAGE	serv.h	/^  AVERAGE = 1, JOIN, NICK, LIST, SELF, QUIT$/;"	e	enum:Msg_type
+CC	Makefile	/^CC       = gcc$/;"	m
+C_UCC_HDR	cli.h	2;"	d
+Clinfo	serv.h	/^} Clinfo;$/;"	t
+Clist	serv.h	/^} Clist;$/;"	t
+Clnode	serv.h	/^} Clnode;$/;"	t
+FLAGS	Makefile	/^FLAGS    = -Wall -ansi -O2$/;"	m
+HEADERS1	Makefile	/^HEADERS1 = sysfunc.h serv.h$/;"	m
+HEADERS2	Makefile	/^HEADERS2 = sysfunc.h cli.h$/;"	m
+JOIN	serv.h	/^  AVERAGE = 1, JOIN, NICK, LIST, SELF, QUIT$/;"	e	enum:Msg_type
+LINK	Makefile	/^LINK     = -lncurses$/;"	m
+LIST	serv.h	/^  AVERAGE = 1, JOIN, NICK, LIST, SELF, QUIT$/;"	e	enum:Msg_type
+MXLEN	serv.h	8;"	d
+MXLINE	cli.h	10;"	d
+MXMSGLEN	serv.h	7;"	d
+M_UCC_HDR	sysfunc.h	2;"	d
+Msg_type	serv.h	/^enum Msg_type$/;"	g
+NICK	serv.h	/^  AVERAGE = 1, JOIN, NICK, LIST, SELF, QUIT$/;"	e	enum:Msg_type
+OBJECTS1	Makefile	/^OBJECTS1 = nchat.o$/;"	m
+OBJECTS2	Makefile	/^OBJECTS2 = face.o$/;"	m
+PORT	cli.h	11;"	d
+PORT	serv.h	9;"	d
+PROG1	Makefile	/^PROG1    = nserver$/;"	m
+PROG2	Makefile	/^PROG2    = nclient$/;"	m
+QUIT	serv.h	/^  AVERAGE = 1, JOIN, NICK, LIST, SELF, QUIT$/;"	e	enum:Msg_type
+SELF	serv.h	/^  AVERAGE = 1, JOIN, NICK, LIST, SELF, QUIT$/;"	e	enum:Msg_type
+S_UCS_HDR	serv.h	2;"	d
+add_client	nchat.c	/^void add_client(Clist *clis, struct sockaddr_in nw, int newfd)$/;"	f
+add_nl	face.c	/^void add_nl(char *buf)$/;"	f
+build_msg	nchat.c	/^int build_msg(char *dest, const char *src, unsigned srclen, Clnode *c, enum Msg_type what)$/;"	f
+check_cmd	nchat.c	/^enum Msg_type check_cmd(char *s)$/;"	f
+clinfo	serv.h	/^  Clinfo clinfo;$/;"	m	struct:clnode
+clinfo	serv.h	/^typedef struct clinfo$/;"	s
+clnode	serv.h	/^typedef struct clnode$/;"	s
+close_connection	face.c	/^void close_connection(int fd)$/;"	f
+end_ncurses	face.c	/^void end_ncurses(WINDOW *text, WINDOW *type, WINDOW *line)$/;"	f
+errcntl	face.c	/^void errcntl(char *x)$/;"	f
+errcntl	nchat.c	/^void errcntl(char *er) \/* TODO make it better *\/$/;"	f
+fd	serv.h	/^  int fd;$/;"	m	struct:clinfo
+find_new_maxfd	nchat.c	/^int find_new_maxfd(Clist *list)$/;"	f
+find_next_read	nchat.c	/^Clnode *find_next_read(Clist *list, fd_set *set)$/;"	f
+get_nick	nchat.c	/^int get_nick(char *to, char *from)$/;"	f
+get_self	nchat.c	/^char *get_self(char *old)$/;"	f
+ip	serv.h	/^  char ip[16];$/;"	m	struct:clinfo
+line	face.c	/^WINDOW *text, *type, *line;$/;"	v
+list	serv.h	/^typedef struct list$/;"	s
+main	face.c	/^main(int argc, char **argv)$/;"	f
+main	nchat.c	/^main(void)$/;"	f
+make_connection	face.c	/^int make_connection(char *addr)$/;"	f
+new_guest	nchat.c	/^int new_guest(Clnode *n)$/;"	f
+next	serv.h	/^  struct clnode *next;$/;"	m	struct:clnode
+nick	serv.h	/^  char nick[MXLEN];$/;"	m	struct:clinfo
+not_empty	face.c	/^int not_empty(char *s)$/;"	f
+read_from	nchat.c	/^int read_from(Clnode *n, char *msg)$/;"	f
+read_input	face.c	/^int read_input(int fd, char *buf)$/;"	f
+remove_client	nchat.c	/^void remove_client(Clist *clis, Clnode *rem, fd_set *aset)$/;"	f
+send_list	nchat.c	/^void send_list(Clist *all, Clnode *one)$/;"	f
+send_msg	nchat.c	/^void send_msg(char *msg, int len, Clist *clis)$/;"	f
+send_nick	face.c	/^void send_nick(int d, char *n)$/;"	f
+set_nick	nchat.c	/^void set_nick(char *where, char *name) $/;"	f
+setup_ncurses	face.c	/^int setup_ncurses(WINDOW **text, WINDOW **type, WINDOW **line)$/;"	f
+size	serv.h	/^  unsigned size;$/;"	m	struct:list
+start	serv.h	/^  Clnode *start;$/;"	m	struct:list
+start_chat	nchat.c	/^void start_chat(void)$/;"	f
+start_client	face.c	/^void start_client(char *addr)$/;"	f
+text	face.c	/^WINDOW *text, *type, *line;$/;"	v
+type	face.c	/^WINDOW *text, *type, *line;$/;"	v
+write_output	face.c	/^int write_output(int fd, char *buf, unsigned len)$/;"	f
